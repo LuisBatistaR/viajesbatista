@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vuelos Luis ✈️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Vuelos Luis ✈️</h1>
+  <form id="formulario">
+    <input type="text" id="origen" placeholder="Origen (ej: MIA)" required />
+    <input type="text" id="destino" placeholder="Destino (ej: JFK)" required />
+    <input type="date" id="fecha" required />
+    <input type="number" id="adultos" placeholder="Adultos" value="1" min="1" />
+    <select id="escala">
+      <option value="">Todas las escalas</option>
+      <option value="0">Directo</option>
+      <option value="1">1 escala</option>
+      <option value="2">2 o más escalas</option>
+    </select>
+    <select id="clase">
+      <option value="">Clase Económica</option>
+      <option value="ECONOMY">Económica</option>
+      <option value="PREMIUM_ECONOMY">Premium Económica</option>
+      <option value="BUSINESS">Business</option>
+      <option value="FIRST">Primera Clase</option>
+    </select>
+    <button type="submit">Buscar</button>
+  </form>
+  <div id="resultados"></div>
+  <script src="script.js"></script>
+</body>
+</html>
